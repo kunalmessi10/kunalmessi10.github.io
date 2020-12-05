@@ -51,6 +51,43 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          
+          <tr onmouseout="nerfie_stop()" onmouseover="nerfie_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nerfie_image'>
+                </div>
+
+                <img src='images/ours_normal-1.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerfie_start() {
+                  document.getElementById('nerfie_image').style.opacity = "1";
+                }
+
+                function nerfie_stop() {
+                  document.getElementById('nerfie_image').style.opacity = "0";
+                }
+                nerfie_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Learning Architecture for Binary Networks</papertitle>
+              <br>
+              
+              <strong>Kunal Pratap Singh*</strong>,
+              <a href="https://github.com/killawhale2">Dahyun Kim*</a>,
+              <a href="https://ppolon.github.io">Jonghyun Choi</a>,
+              <br>
+              <em>ECCV</em>, 2020, extended version under review in T-PAMI  
+              <br>
+              <a href="https://arxiv.org/abs/2002.06963">arXiv</a> /
+              <a href="https://github.com/gistvision/bnas/">code</a>
+              <p></p>
+              <p> First architecture search method for binary neural networks.
+              </p>
+            </td>
+          </tr>           
           <tr onmouseout="nerfie_stop()" onmouseover="nerfie_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
