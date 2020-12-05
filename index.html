@@ -78,7 +78,7 @@
               <a href="https://github.com/killawhale2">Dahyun Kim*</a>,
               <a href="https://ppolon.github.io">Jonghyun Choi</a>,
               <br>
-              <em>ECCV</em>, 2020  
+              <em>ECCV</em>, 2020, extended version under review in T-PAMI  
               <br>
               <a href="https://arxiv.org/abs/2002.06963">arXiv</a> /
               <a href="https://github.com/gistvision/bnas/">code</a>
@@ -126,97 +126,6 @@
             </td>
           </tr> 
 
-          <tr onmouseout="c5_stop()" onmouseover="c5_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='c5_image'>
-                  <img src='images/c5_after.jpg' width="160"></div>
-                <img src='images/c5_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function c5_start() {
-                  document.getElementById('c5_image').style.opacity = "1";
-                }
-
-                function c5_stop() {
-                  document.getElementById('c5_image').style.opacity = "0";
-                }
-                c5_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2011.11890">
-                <papertitle>Cross-Camera Convolutional Color Constancy</papertitle>
-              </a>
-              <br>
-              <a href="https://sites.google.com/corp/view/mafifi">Mahmoud Afifi</a>,
-              <strong>Jonathan T. Barron</strong>,
-              <a href="http://www.chloelegendre.com/">Chloe LeGendre</a>,
-              <a href="https://research.google/people/105312/">Yun-Ta Tsai</a>,
-              <a href="https://www.linkedin.com/in/fbleibel/">Francois Bleibel</a>
-              <br>
-              <em>arXiv</em>, 2020  
-              <br>
-              <p></p>
-              <p>
-                With some extra (unlabeled) test-set images, you can build a hypernetwork that calibrates itself at test time to previously-unseen cameras.
-              </p>
-            </td>
-          </tr> 
-
-
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/3DSP_160.jpg" alt="3DSP" width="160" height="120" style="border-style: none">
-            </td>
-            <td width="75%" valign="middle">
-              <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmbG1tOGIta3N1Wjg/view?usp=sharing" id="3DSP">
-                <papertitle>3D Self-Portraits</papertitle>
-              </a>
-              <br>
-              <a href="http://www.hao-li.com/">Hao Li</a>, <a href="http://www.evouga.com/">Etienne Vouga</a>, Anton Gudym, <a href="http://www.cs.princeton.edu/~linjiel/">Linjie Luo</a>, <strong>Jonathan T. Barron</strong>, Gleb Gusev
-              <br>
-              <em>SIGGRAPH Asia</em>, 2013
-              <br>
-              <a href="http://www.youtube.com/watch?v=DmUkbZ0QMCA">video</a> / <a href="http://shapify.me/">shapify.me</a> / <a href="data/3DSP_siggraphAsia2013.bib">bibtex</a>
-              <p>Our system allows users to create textured 3D models of themselves in arbitrary poses using only a single 3D sensor.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="rgbd_stop()" onmouseover="rgbd_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div id='rgbd_anim' class='hidden'><img src="images/SceneSIRFS.gif"></div>
-              <div id='rgbd_still'><img src="images/SceneSIRFS-still.jpg"></div>
-              <script type="text/javascript">
-                function rgbd_start() {
-                  document.getElementById('rgbd_anim').style.display = 'inline';
-                  document.getElementById('rgbd_still').style.display = 'none';
-                }
-
-                function rgbd_stop() {
-                  document.getElementById('rgbd_anim').style.display = 'none';
-                  document.getElementById('rgbd_still').style.display = 'inline';
-                }
-                rgbd_stop()
-              </script>
-            </td>
-            <td width="75%" valign="middle">
-              <a href="https://drive.google.com/file/d/1snypSLhzC0jXCchJRsWpcDZ7Es5hDmXo/view?usp=sharing">
-                <papertitle>Intrinsic Scene Properties from a Single RGB-D Image</papertitle>
-              </a>
-              <br>
-              <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
-              <br>
-              <em>CVPR</em>, 2013 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
-              <a href="https://drive.google.com/file/d/1cLUw72WpgdZ_3TQAjJABdgywqjBfn_Mq/view?usp=sharing">supplement</a> / <a href="data/BarronMalikCVPR2013.bib">bibtex</a> / <a href="http://techtalks.tv/talks/intrinsic-scene-properties-from-a-single-rgb-d-image/58614/">talk</a> / <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmWW1CZGJPbi12R0k/view?usp=sharing">keynote</a> (or <a href="https://drive.google.com/file/d/19q3EFf6GIb4UFcCN2DVU2jVKpxRj5kxf/view?usp=sharing">powerpoint</a>, <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmMzQ4ZVp1SWdnVkk/view?usp=sharing">PDF</a>) / <a href="https://drive.google.com/open?id=1ZbPScVA6Efqd-ESvojl92sw8K-82Xxry">code &amp; data</a>
-              <p>By embedding mixtures of shapes &amp; lights into a soft segmentation of an image, and by leveraging the output of the Kinect, we can extend SIRFS to scenes.
-                <br>
-                <br>TPAMI Journal version: <a href="https://drive.google.com/file/d/1iQiUxZvjPPnb8rFCwXYesTgFSRk7mkAq/view?usp=sharing">version</a> / <a href="data/BarronMalikTPAMI2015B.bib">bibtex</a>
-              </p>
-            </td>
-          </tr>
 
 
 
