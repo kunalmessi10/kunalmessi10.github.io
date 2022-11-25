@@ -19,7 +19,7 @@
               <p style="text-align:center">
                 <name>Kunal Pratap Singh</name>
               </p>
-                <p>I am currently a Predoctoral Young Investigator in the <a href="https://prior.allenai.org/people">PRIOR</a> team at the Allen Institute for AI. I work on Computer Vision, Embodied AI and Reinforcement Learning. 
+                <p>I am a Predoctoral Young Investigator in the <a href="https://prior.allenai.org/people">PRIOR</a> team at the Allen Institute for AI. I work on Computer Vision, Embodied AI and Reinforcement Learning. 
               </p>
               
               <p>
@@ -51,6 +51,43 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+                    <tr onmouseout="nerfie_stop()" onmouseover="nerfie_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nerfie_image'>
+                </div>
+
+                <img src='images/ours_normal-1.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerfie_start() {
+                  document.getElementById('nerfie_image').style.opacity = "1";
+                }
+
+                function nerfie_stop() {
+                  document.getElementById('nerfie_image').style.opacity = "0";
+                }
+                nerfie_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Learning Architecture for Binary Networks</papertitle>
+              <br>
+              
+              <strong>Kunal Pratap Singh*</strong>,
+              <a href="https://github.com/killawhale2">Dahyun Kim*</a>,
+              <a href="https://ppolon.github.io">Jonghyun Choi</a>,
+              <br>
+              ECCV, 2020 
+              <br>
+              <a href="http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123570562.pdf">pdf</a> | <a href="https://github.com/gistvision/bnas/">code</a>
+              <p></p>
+              <p> We develop the first architecture search method for binary neural networks. We propose a new search space and cell design, and discover architectures that outperform floating point backbones.
+              </p>
+            </td>
+          </tr> 
+          
           
           <tr onmouseout="nerfie_stop()" onmouseover="nerfie_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
